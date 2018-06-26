@@ -1,0 +1,33 @@
+#ssh -i <file>.pem ec2-user@Public DNS/public IP---> To connect with the Git Bash from Redhat Linux from anywhere.
+#ssh -i <file>.pem ec2-user@Private DNS/private IP---> To connect with the Git Bash from Redhat Linux with in the AWS.
+#sudo su - ---------> To switch to the root user.
+#pwd -----> To know the present working derectory(Ex:/root or /home/ec2-user).
+#who -----> Print information about users who are currently logged in.
+#cd ------> Used change directory.
+#ifconfig ------> It shows list of available IP Addresses. 
+#ls ------> List information about the FILEs (the current directory by default).
+#ls -l ----> It will list dir in long formate.
+#ls -a ----> It will list all dir in long formate.
+#ls -al -----> It will list all the hidden file in long formate.
+#cat -----> It displays contec=nt of the file.
+#cat ><filename> -----> It creates file with the given name and over write the content
+#cat >><filename> -----> It creates file with the given name and over append the content
+#mkdir <filename> -----> It makes directory.
+#cp <sourece file> <destination file> ------> To copy files from source to destination.
+#cp -rvfp <source dir> <dest dir> -------> To copy dir from one location to another.
+#mv <source file/dir> <dest file/dir> -----> To move file/dir from one location to another.
+#mv <file/dir old name> <file/dir new name> ------> Renaming a file/dir.
+#rm -f <filename> -----> To remove file forcefully.
+#rmdir <dirname> ------> To remove an empty directory.
+#rm -rf <dirname> -----> To remove dir with files.
+#less ------> It is used to read the contnet or text of the file.
+#touch -----> It is used to create an empty file.
+#top -------> It  is used to check which program or process consuming most of our system memory.
+#ps -ux ----> Is used to know the P.id's of the running procceses.
+#ps -aux -----> Is used to know P.id's of running processes
+#kill <p.Id> ------> It is used kill the running process.
+#ps -c <processname> -----> will display the details of the perticular process like pid, time so on....
+#echo -----> Is used to print the content.
+#chmod -----> Is used to change/give/mod the permission to the group, user and other of a file/dir.
+#chmod 777 <filename/dir> ------> will give all permission to all of a file/dir.(read-4, write-2 and x-1)
+
