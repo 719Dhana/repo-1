@@ -30,4 +30,22 @@
 #echo -----> Is used to print the content.
 #chmod -----> Is used to change/give/mod the permission to the group, user and other of a file/dir.
 #chmod 777 <filename/dir> ------> will give all permission to all of a file/dir.(read-4, write-2 and x-1)
+#vi /etc/hostnaem -------> to change hostname(bastion)
+#vi /etc/hosts ----------> to change hosts(pvt ip hostname)
+#hostname -F /etc/hostname ------> to update hostname
+#vi /etc/ssh/sshd_config ---------> to edit sshd file and enable PW for user
+#service sshd restart -------> to restart sshd service
+#ps -ef | grep sshd --------> to check about sshd service
+#id <usernaem> ------> will show userid, groupid and group
+VI COMMANDS
+#dd ----->to delete entire row
+#shift+g ------> to go bottom of the page
+#gg ---------> to go top of the page
+#shift+a -------> to go end of the line
+#shift+i -------> to go starting of the line
+#o -------> to go to the next line
+#esc+:set nu --------> to set line numbers
+#ssh-keygen ---------> will genarate pub/pvtkey
+#echo $? -------> it is used to check weather command is succeded r not
+#top, last, uptime, w, etc --------> are used to check server uptime
 
