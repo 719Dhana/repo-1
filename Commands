@@ -45,6 +45,18 @@ VI COMMANDS
 #shift+i -------> to go starting of the line
 #o -------> to go to the next line
 #esc+:set nu --------> to set line numbers
+#O -----> creates a line above the an exsting line and allow to edit.
+#$ -----> to go end of the line
+#0 -----> to go starting of the line.
+#x -----> to delete a char
+#nx ----> to delete n char
+#dw -----> to delete word
+#ndw ------> to delete n words
+#dd -------> to delete entire line
+#ndd ------> to delete n lines
+#yy -------> to copy line
+#nyy ------> to copy n lines
+#p ---------> to paste the copied line beneath the current line
 #ssh-keygen ---------> will genarate pub/pvtkey
 #echo $? -------> it is used to check weather command is succeded r not
 #top, last, uptime, w, etc --------> are used to check server uptime
