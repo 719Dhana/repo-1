@@ -59,7 +59,7 @@ VI COMMANDS
 #p ---------> to paste the copied line beneath the current line
 #ssh-keygen ---------> will genarate pub/pvtkey in .ssh file under authorized keys in root user home directory
 #ssh-copy-id devops@ip --------> to copy id_rsa_pub to other server
-#echo $? -------> it is used to check weather command is succeded r not
+#echo $? -------> it is used to check weather command is succeded r not, $- is the status code
 #top, last, uptime, w, etc --------> are used to check server uptime
 #nslookup www.google.com-------> to get ip address
 #tracert -------> to know how icmp packets are go
@@ -74,3 +74,6 @@ VI COMMANDS
 #sh catalina.sh start -------> "
 #sh startup.sh -------> "
 #netstat -anlp | grep :8080 ------> used know weather port no.8080 is running or not
+#w, uptime, top ------> are used to know the server uptime.
+#aws ec2 create-image instance-id ------> to create image from aws cli
+#aws ec2 describe-instances ------> to describe available instances
