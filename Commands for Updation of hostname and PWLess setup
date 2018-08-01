@@ -1,0 +1,7 @@
+echo "hostname" >/etc/hostname
+ifconfig -----> to get pvt-ip
+echo "private-ip hostname" >>/etc/hosts
+hostname -F /etc/hostname
+vi /etc/ssh/sshd_config -----> to update "PasswordAuthentication Yes"
+useradd <username>
+passwd --------> 
