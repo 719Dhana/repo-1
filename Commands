@@ -77,3 +77,4 @@ VI COMMANDS
 #w, uptime, top ------> are used to know the server uptime.
 #aws ec2 create-image instance-id ------> to create image from aws cli
 #aws ec2 describe-instances ------> to describe available instances
+#./nexus start -----> to start nexus
