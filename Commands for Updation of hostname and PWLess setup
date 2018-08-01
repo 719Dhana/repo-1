@@ -3,5 +3,8 @@ ifconfig -----> to get pvt-ip
 echo "private-ip hostname" >>/etc/hosts
 hostname -F /etc/hostname
 vi /etc/ssh/sshd_config -----> to update "PasswordAuthentication Yes"
+service sshd restart -----> to restart sshd service
 useradd <username>
 passwd --------> 
+ssh-keygen -----> to generate id_rsa(private) and id_rsa.pub(public)
+ssh-copy-id <user>@ip -------> to copy keys to the other server
