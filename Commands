@@ -57,7 +57,8 @@ VI COMMANDS
 #yy -------> to copy line
 #nyy ------> to copy n lines
 #p ---------> to paste the copied line beneath the current line
-#ssh-keygen ---------> will genarate pub/pvtkey
+#ssh-keygen ---------> will genarate pub/pvtkey in .ssh file under authorized keys in root user home directory
+#ssh-copy-id devops@ip --------> to copy id_rsa_pub to other server
 #echo $? -------> it is used to check weather command is succeded r not
 #top, last, uptime, w, etc --------> are used to check server uptime
 #nslookup www.google.com-------> to get ip address
