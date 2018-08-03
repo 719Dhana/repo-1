@@ -78,3 +78,4 @@ VI COMMANDS
 #aws ec2 create-image instance-id ------> to create image from aws cli
 #aws ec2 describe-instances ------> to describe available instances
 #./nexus start -----> to start nexus
+#aws configure ------->to generate ACCESS KEY and SECRETE KEY
