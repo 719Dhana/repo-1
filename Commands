@@ -98,7 +98,10 @@ VI COMMANDS
 ------->script to run in crontab editor
 after finishing the above spteps go to aws cloud watch console and click on browse metrics and then system/linux you can select instance that we want to monitor.
 ===================================================================================================================================================================
-
+#cat /etc/shells or #chsh -l --------> it displays the shells
+#echo $SHELL -------> to know what shell we are using
+#exec /bin/sh --------to change shell to SH
+!==SHIBONG
 
 
 
