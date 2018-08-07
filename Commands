@@ -102,7 +102,8 @@ after finishing the above spteps go to aws cloud watch console and click on brow
 #echo $SHELL -------> to know what shell we are using
 #exec /bin/sh --------to change shell to SH
 !==SHIBONG
-
+#/etc/yum.repos.d/ ---------> when we install any s/w with yum it will go to this path and picks the links.
+#tree /etc/ansible -----------> it will show the list in tree...
 
 
 
