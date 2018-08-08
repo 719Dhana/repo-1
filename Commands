@@ -104,6 +104,12 @@ after finishing the above spteps go to aws cloud watch console and click on brow
 !==SHIBONG
 #/etc/yum.repos.d/ ---------> when we install any s/w with yum it will go to this path and picks the links.
 #tree /etc/ansible -----------> it will show the list in tree...
-
-
+#rpm -qa htt* --------> to know weather package available or not
+#yum remove http* --------> to remove package
+#cp hosts hosts.backup ---------> to backup file
+#ansible localhost -m yum -a "name=http* state=present" --------> to install httpd
+#ansible localhost -m yum -a "name=http* state=absent" --------> to unistall httpd
+#ansible localhost -m yum -a "name=http* state=latest" --------> to update httpd
+#ansible localhost -m service -a "name=http* state=started" --------> to start httpd
+#ansible localhost -m service -a "name=http* state=stopped" --------> to stop httpd
 
