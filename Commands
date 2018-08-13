@@ -115,6 +115,13 @@ after finishing the above spteps go to aws cloud watch console and click on brow
 #man cd --------> is used to know the details of the cd command
 #locate -i *filename* ------> used to search the unknown file with in the OS
 ===========================================================================================================================
+#lsof | grep ' root ' ------> to know list of opened files for the root user
+#lsof -p <pid> --------> to know list of opened files for specific process
+#ulimit -n -----> max opened processes
+#ulimit -u --------> max opened files for the user
+#ulimit -i -------> pending signals
+#cat /proc/<PID>/limits -------> to know opened files for specific user.
+
 1. tar command examples
 $ tar cvf archive_name.tar dirname/----->Create a new tar archive.
 $ tar xvf archive_name.tar ------->Extract from an existing tar archive.
