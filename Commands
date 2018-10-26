@@ -127,6 +127,12 @@ after finishing the above spteps go to aws cloud watch console and click on brow
 $ tar cvf archive_name.tar dirname/----->Create a new tar archive.
 $ tar xvf archive_name.tar ------->Extract from an existing tar archive.
 $ tar tvf archive_name.tar-------->View an existing tar archive.
+Where,
+-------
+           x: This option tells tar to extract the files.
+           v: The “v” stands for “verbose.” This option will list all of the files one by one in the archive.
+           z: The z option is very important and tells the tar command to uncompress the file (gzip).
+           f: This options tells tar that you are going to give it a file name to work with.
 2. grep command examples
 $ grep -i "the" demo_file------>Search for a given string in a file (case in-sensitive search).
 $ grep -A 3 -i "example" demo_text--------->Print the matched line, along with the 3 lines after it.
