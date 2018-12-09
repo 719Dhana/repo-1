@@ -30,6 +30,28 @@
 #echo -----> Is used to print the content.
 #chmod -----> Is used to change/give/mod the permission to the group, user and other of a file/dir.
 #chmod 777 <filename/dir> ------> will give all permission to all of a file/dir.(read-4, write-2 and x-1)
+#!/bin/bash
+#changes the hostname 
+echo slave1 >/etc/hostname 
+ip=`hostname -i`
+echo "$ip slave1" >>/etc/hosts
+hostname -F /etc/hostname 
+
+#allow login other than ec2-user
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+service sshd restart 
+#setting the password for the root user 
+echo 12345 | passwd root --stdin
+
+
+To replace the keyword with sed 
+
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+serviec sshd restart 
+
+ ansible all  -m yum -a "name=httpd state=present"
+ ansible all -m service -a "name=httpd state=started"
+
 #vi /etc/hostnaem -------> to change hostname(bastion)
 #vi /etc/hosts ----------> to change hosts(pvt ip hostname)
 #hostname -F /etc/hostname ------> to update hostname
