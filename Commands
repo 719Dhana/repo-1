@@ -51,6 +51,47 @@ serviec sshd restart
 
  ansible all  -m yum -a "name=httpd state=present"
  ansible all -m service -a "name=httpd state=started"
+ 
+ Tomcat instaation script
+
+#!/bin/bash 
+yum install unzip wget git -y
+#java Downloading 
+wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm
+#installtion of java
+rpm -ivh jdk-8u131-linux-x64.rpm
+#Download tomcat 
+mkdir /opt/devops
+cd /opt/devops
+wget http://mirrors.wuchna.com/apachemirror/tomcat/tomcat-8/v8.5.34/bin/apache-tomcat-8.5.34-windows-x64.zip
+unzip apache-tomcat-8.5.34-windows-x64.zip
+chmod -R 755 apache-tomcat*
+mv apache-tomcat* tomcat
+/opt/devops/tomcat/bin/startup.sh
+
+
+Apache web server / httpd server /http server 
+
+#!/bin/bash 
+yum update -y
+yum install unzip wget git -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+
+
+Nginx
+
+#!/bin/bash 
+yum update -y
+yum install unzip wget git -y
+wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+#curl http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -o epel-release-latest-7.noarch.rpm
+rpm -ivh epel-release-7*.rpm
+yum update -y
+yum install nginx -y
+systemctl start nginx
+systemctl enable nginx
 
 #vi /etc/hostnaem -------> to change hostname(bastion)
 #vi /etc/hosts ----------> to change hosts(pvt ip hostname)
